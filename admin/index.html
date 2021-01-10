@@ -81,70 +81,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item menu-close">
+            <a href="index.html" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
-                <!-- <i class="right fas fa-angle-left"></i> -->
+                Proyek
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <!-- <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="pengeluaran.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>Pengeluaran</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="pemasukan.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>Pemasukan</p>
                 </a>
               </li>
-            </ul> -->
-          </li>
-          <!-- <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li> -->
-          <li class="nav-item">
-            <a href="pengeluaran.html" class="nav-link">
-              <!-- <i class="nav-icon fas fa-th"></i> -->
-              <i class="nav-icon fas fa-money-check-alt"></i>
-              <p>
-                Pengeluaran
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pemasukan.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Pemasukan
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="kategori.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Kategori
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="neraca.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Neraca Keuangan
-              </p>
-            </a>
+              <li class="nav-item">
+                <a href="kategori.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kategori</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="neraca.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Neraca Keuangan</p>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -227,7 +197,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -249,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
                                 </div>
 
                               </div>
@@ -289,7 +259,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -310,9 +280,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="card">
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
-                                <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
-                                </div>
+                                 <div class="card-tools">
+                                  <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                 </div>
 
                               </div>
                               <!-- /.card-header -->
@@ -351,7 +321,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -373,7 +343,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
                                 </div>
 
                               </div>
@@ -413,7 +383,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -435,9 +405,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
                                 </div>
-
                               </div>
                               <!-- /.card-header -->
                               <div class="card-body">
@@ -475,7 +444,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -497,9 +466,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
                                 </div>
-
                               </div>
                               <!-- /.card-header -->
                               <div class="card-body">
@@ -537,7 +505,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -558,10 +526,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="card">
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
-                                <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
-                                </div>
-
+                               <div class="card-tools">
+                                <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                               </div>
                               </div>
                               <!-- /.card-header -->
                               <div class="card-body">
@@ -599,7 +566,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -621,9 +588,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i
+                                      class="far fa-eye"></i></button>
                                 </div>
-
                               </div>
                               <!-- /.card-header -->
                               <div class="card-body">
@@ -661,7 +629,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Neraca Saldo</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></button>
+                                  <a href="neraca.html" button class="btn btn-info">Lihat Neraca&nbsp;<i class="far fa-eye"></i></a>
                                 </div>
 
                               </div>
@@ -683,7 +651,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="card-header">
                                 <h2 class="card-title"><strong>Rencana Anggaran Belanja</strong></h2>
                                 <div class="card-tools">
-                                  <button class="btn btn-info">Lihat Rekap RAB&nbsp;<i class="far fa-eye"></i></button>
+                                  <button class="btn btn-info" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Lihat Rekap RAB&nbsp;<i
+                                      class="far fa-eye"></i></button>
                                 </div>
 
                               </div>
@@ -696,13 +666,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                   <button type="button" class="btn btn-outline-success">Struktur</button>
                                   <button type="button" class="btn btn-outline-danger">MEP</button>
                                 </div>
-
                               </div>
+
                               <!-- /.card-body -->
                             </div>
                             <!-- /.card -->
                           </div>
                         </div>
+                        <!-- row -->
                       </td>
                     </tr>
                   </tbody>
@@ -712,6 +683,98 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
             <!-- /.card -->
           </div>
+           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" v-show="!editmode" id="addReportLabel">Form Pengeluaran</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                   </button>
+                 </div>
+      <div class="card-body table-responsive p-0">
+        <div class="col-xs-12 col-md-6 col-lg-6">
+
+        </div>
+        <table class="table table-bordered table-hover">
+          <thead class="bg-secondary">
+            <tr>
+              <th>No.</th>
+              <th>Tanggal</th>
+              <th>Nama Barang</th>
+              <th>Nama Toko</th>
+              <th>Deskripsi</th>
+              <th>Kategori</th>
+              <th>Jumlah</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2020-07-31</td>
+              <td>Semen</td>
+              <td>Toko Rahayu</td>
+              <td>Untuk pembangunan</td>
+              <td>Material</td>
+              <td>120.000</td>
+              <td>
+                <button class="btn btn-info">Lihat&nbsp;<i class="far fa-eye"></i></button>
+                <button class="btn btn-success">Edit&nbsp;<i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger">Hapus&nbsp;<i class="fa fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2020-08-05</td>
+              <td>Semen</td>
+              <td>Toko Belakang</td>
+              <td>Untuk disimpan</td>
+              <td>Material</td>
+              <td>120.000</td>
+              <td>
+                <button class="btn btn-info">Lihat&nbsp;<i class="far fa-eye"></i></button>
+                <button class="btn btn-success">Edit&nbsp;<i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger">Hapus&nbsp;<i class="fa fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2020-08-04</td>
+              <td>Laptop</td>
+              <td>Toko Rahayu</td>
+              <td>Laptop Baru</td>
+              <td>Inventaris</td>
+              <td>3.000.000</td>
+              <td>
+                <button class="btn btn-info">Lihat&nbsp;<i class="far fa-eye"></i></button>
+                <button class="btn btn-success">Edit&nbsp;<i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger">Hapus&nbsp;<i class="fa fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>2020-08-04</td>
+              <td>HP</td>
+              <td>Toko Depan</td>
+              <td>HP Baru</td>
+              <td>Inventaris</td>
+              <td>800.000</td>
+              <td>
+                <button class="btn btn-info">Lihat&nbsp;<i class="far fa-eye"></i></button>
+                <button class="btn btn-success">Edit&nbsp;<i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger">Hapus&nbsp;<i class="fa fa-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+               </div>
+           </div>
         </div>
       </div><!-- /.container-fluid -->
     </div>

@@ -35,22 +35,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item d-none d-sm-inline-block">
         <a href="../portofolio.html" class="nav-link">Portofolio</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="pages/examples/login.html" class="nav-link">Login</a>
-      </li>
     </ul>
-
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search by typing here" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
   </nav>
   <!-- /.navbar -->
 
@@ -122,6 +107,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt text-red"></i>
+              <p>
+                Logout
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -161,7 +155,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                   </div>
                 </div>
-                <div class="card-tools"><button class="btn btn-primary">Tambah   <i class="fas fa-plus"></i></button></div>
+                <div class="card-tools"><button class="btn btn-primary" data-toggle="modal"
+                    data-target="#exampleModalCenter">Tambah <i class="fas fa-plus"></i></button></div>
 
               </div>
               <!-- ./card-header -->
@@ -240,6 +235,49 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
+          </div>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" v-show="!editmode" id="addReportLabel">Form Tambah Kategori</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <form>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label>Nama Kategori</label>
+                      <input v-model="form.nama" type="text" name="nama" class="form-control" :class="{ 'is-invalid': form.errors.has('nama') }">
+                    </div>
+                   <div class="form-group">
+                     <label>Radio </label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                        Pengeluaran
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="b">
+                        <label class="form-check-label" for="exampleRadios2">
+                        Pemasukan
+                        </label>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Simpan Data</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div><!-- /.container-fluid -->
